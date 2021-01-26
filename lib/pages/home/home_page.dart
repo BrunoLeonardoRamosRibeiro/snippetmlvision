@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:snippetmlvision/pages/components/image_widget.dart';
 import 'package:snippetmlvision/pages/home/controllers/home_controller.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           title: Text('Text Recognition'),
           actions: [
             FlatButton(
-              onPressed: scanText,
+              onPressed: mandar,
               child: Text(
                 'Scan',
                 style: TextStyle(color: Colors.white),
@@ -47,6 +48,13 @@ class _HomePageState extends State<HomePage> {
           )
               : Container(),
         ));
+  }
+
+
+  Future <void> mandar() async{
+    String phone = '+5599982746175';
+    String urlEncode = Uri.encodeFull('http://maps.google.com/maps?q=-4.2280,-44.7975');
+    await launch("sms:${phone}?body=É apenas um teste: ${urlEncode}");
   }
 
   Future scanText() async {
