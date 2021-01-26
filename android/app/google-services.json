@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9463215345",
+    "project_id": "snippetocr",
+    "storage_bucket": "snippetocr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9463215345:android:5e0b2f1f61ffb40a2d2550",
+        "android_client_info": {
+          "package_name": "com.example.snippetmlvision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9463215345-d3v0buln5d28jovopvfl0seo2lq0u1n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.snippetmlvision",
+            "certificate_hash": "d6ca109185a8bd036dd2dad8ec60ab4cc135235d"
+          }
+        },
+        {
+          "client_id": "9463215345-ccsqgko7oonl1762anfsvdv6hcnopdm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnuBBCL9VmPjpkSp3b7uC1fbA7RO88STE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9463215345-ccsqgko7oonl1762anfsvdv6hcnopdm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
