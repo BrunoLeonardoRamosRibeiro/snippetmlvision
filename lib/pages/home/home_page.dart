@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           title: Text('Text Recognition'),
           actions: [
             FlatButton(
-              onPressed: mandar,
+              onPressed: ()=> replaceCaracters('65700-000'),
               child: Text(
                 'Scan',
                 style: TextStyle(color: Colors.white),
@@ -48,6 +48,16 @@ class _HomePageState extends State<HomePage> {
           )
               : Container(),
         ));
+  }
+
+  // ignore: missing_return
+  String transformToPlainText(String text){
+    List<String> coded = ["-", ".", "/"]; 
+    List<String> decoded = ["", "", ""];
+    Map<String, String> map = new Map.fromIterables(coded, decoded);
+    final result = map.entries
+        .fold(text, (prev, e) => prev.replaceAll(e.key, e.value));
+    print(result);
   }
 
 
